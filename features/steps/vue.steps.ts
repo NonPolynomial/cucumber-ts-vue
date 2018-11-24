@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { Given, When, Then } from 'cucumber';
 import Vue from 'vue';
 
-import Test from './Test.vue';
+import Test from '../../src/Test.vue';
 
 Given('a Vue Instance', function () {
   this.vueInstance = new Test();
