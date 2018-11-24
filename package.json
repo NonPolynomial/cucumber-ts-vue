@@ -1,6 +1,18 @@
 {
   "name": "cucumber-ts-vue",
   "description": "project for testing vue sfc with typescript",
+  "keywords": [
+    "gherkin",
+    "cucumber",
+    "testing",
+    "test",
+    "typescript",
+    "ts",
+    "vue",
+    "vue sfc",
+    "vue single file components",
+    "webpack"
+  ],
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
