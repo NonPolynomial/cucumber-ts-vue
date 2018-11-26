@@ -198,7 +198,27 @@ We have 3 NPM scripts:
   * after testing we don't need the generated `steps.js` anymore
   * this NPM script runs automatically after `test`
 
+# Watching
 
+`cucumber` itself has no watch task.
+And in order to render Vue SFCs and TypeScript for step definitions, we need to run our NPM `test` script on every file change.
+
+We need some tool to watch files and rerun `npm test`.
+For these tasks we choose `nodemon` and create a nodemon config file.
+
+```json
+{
+  "ext": "js,ts,vue,feature",
+  "watch": [
+    "src/**/*",
+    "features/**/*"
+  ],
+  "ignore": [
+    "features/step_definitions/steps.js"
+  ],
+  "exec": "npm run test"
+}
+```
 
 
 

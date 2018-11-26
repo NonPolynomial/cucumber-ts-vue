@@ -1,0 +1,11 @@
+{
+  "ext": "js,ts,vue,feature",
+  "watch": [
+    "src/**/*",
+    "features/**/*"
+  ],
+  "ignore": [
+    "features/step_definitions/steps.js"
+  ],
+  "exec": "npm run test"
+}
