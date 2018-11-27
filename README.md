@@ -112,7 +112,7 @@ We need to transpile Vue SFCs to normal JavaScript, because whether Typescript n
 For that we need additional node modules:
 
 * `vue-loader`
-`* vue-template-compiler`
+* vue-template-compiler`
 
 Now we have to write a webpack config and add our `vue-loader` to the `modules.rules` section and add the `VueLoaderPlugin` to our used plugins.
 
