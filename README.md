@@ -112,7 +112,7 @@ We need to transpile Vue SFCs to normal JavaScript, because whether Typescript n
 For that we need additional node modules:
 
 * `vue-loader`
-`* vue-template-compiler`
+* `vue-template-compiler`
 
 Now we have to write a webpack config and add our `vue-loader` to the `modules.rules` section and add the `VueLoaderPlugin` to our used plugins.
 
@@ -204,7 +204,7 @@ We have 3 NPM scripts:
 And in order to render Vue SFCs and TypeScript for step definitions, we need to run our NPM `test` script on every file change.
 
 We need some tool to watch files and rerun `npm test`.
-For these tasks we choose `nodemon` and create a nodemon config file.
+For these tasks we choose [`nodemon`][nodemon] and create a nodemon config file.
 
 ```json
 {
@@ -224,6 +224,7 @@ For these tasks we choose `nodemon` and create a nodemon config file.
 
 [cucumber]: https://docs.cucumber.io/cucumber/
 [gherkin]: https://docs.cucumber.io/cucumber/
+[nodemon]: https://nodemon.io
 [ts]: https://www.typescriptlang.org/
 [vue]: https://vuejs.org/
 [vue-sfc]: https://vuejs.org/v2/guide/single-file-components.html
